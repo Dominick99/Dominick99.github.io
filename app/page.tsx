@@ -169,7 +169,6 @@ export default function Home() {
                 <h3>{project.title}</h3>
                 <p className="project-lead">{project.description}</p>
                 <p className="project-motivation">{project.motivation}</p>
-                {project.origin && <p className="project-origin">{project.origin}</p>}
                 <div className="tags">{project.tools.map((tool) => (
                   <span key={tool}>
                     {toolLogos[tool] && <img src={toolLogos[tool]} alt="" aria-hidden="true" />}
